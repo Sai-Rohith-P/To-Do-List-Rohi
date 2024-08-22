@@ -1,0 +1,100 @@
+body{
+    background-image: linear-gradient(to right, rgb(53, 53, 246) , rgb(221, 0, 255));
+}
+.logoo{
+    color: rgb(200, 200, 200);
+    font-size: 25px;
+    font-family: cursive;
+}
+ .maindiv{
+    width: 470px;
+    margin-top: 130px;
+    border-radius: 10px;
+    padding-bottom: 37px;
+}
+.headtext img{
+    width: 55px;
+    height: 55px;
+}
+.inputButton{
+    position: relative;
+    padding-bottom: 30px;
+}
+.input{
+    height:45px;
+    width: 320px;
+    border-radius: 30px;
+    background-color: rgb(199, 199, 199);
+    outline: none;
+    cursor:text;
+    padding-left: 20px;
+}
+.btnn{
+    background-color: orangered;
+    width: 90px;
+    height: 45px;
+    border-radius: 30px;
+    position: absolute;
+    top: 0px;
+    right: 64px;
+}
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    font-size: 17px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-image: url("circleyt.svg");
+    background-size: cover;
+    background-position: center;
+    left: 15px;
+}
+ul li.checked{
+    color: rgb(123, 123, 123);
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    height: 20px;
+    width: 20px;
+    background-image: url("circle.png");
+}
+ul li span{
+    position: absolute;
+    right: 90px;
+    top: 13px;
+    filter: invert(0.4);
+   cursor: pointer;
+}
+ul li span img{
+    width: 20px ;
+    height: 20px;
+}
+ul li span:hover{
+    filter: invert(0.8);
+}
+
+
+@media screen and (max-width:576px) {
+    .maindiv{
+        width: 370px;
+    }
+    .btnn{
+        right: 18px;
+        height: 40px;
+    }
+    .input{
+        height:40px;
+        width: 280px;   
+    }
+    .inputButton{
+        margin-left: -15px;
+    }
+} 
