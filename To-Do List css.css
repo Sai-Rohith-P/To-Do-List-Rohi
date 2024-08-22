@@ -99,4 +99,7 @@ ul li span:hover{
     .inputButton{
         margin-left: -15px;
     }
+    ul li span{
+        right: 33px;
+    }
 } 
