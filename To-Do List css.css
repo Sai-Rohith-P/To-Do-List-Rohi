@@ -53,6 +53,7 @@ ul li::before{
     width: 22px;
     border-radius: 50%;
     background-image: url("circleyt.svg");
+    filter: invert(0.5);
     background-size: cover;
     background-position: center;
     left: 15px;
@@ -65,6 +66,7 @@ ul li.checked::before{
     height: 20px;
     width: 20px;
     background-image: url("circle.png");
+    filter: none;
 }
 ul li span{
     position: absolute;
